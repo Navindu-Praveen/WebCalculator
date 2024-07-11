@@ -1,0 +1,90 @@
+/* Background design */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Style the header */
+header {
+    color: #fff;
+}
+
+/* Style the footer */
+footer {
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    background: #2c3e50;
+}
+
+/* Style the calculator container */
+.calc {
+    max-width: 320px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the screen */
+.screen {
+    font-size: 2em;
+    height: 70px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.buttons .btn {
+    font-size: 1.5em;
+    height: 60px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Style for number buttons */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Style for operator buttons */
+.btn-warning {
+    background-color: #f39c12;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+}
+
+/* Style for clear button */
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Style for equals button */
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}

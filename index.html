@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <!-- Link to Bootstrap CSS for styling -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to external CSS file for additional styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Page header -->
+    <header class="text-center my-5">
+        <h2>Calculator Assignment</h2>
+        <h6>Navindu Praveen</h6>
+    </header>
+
+    <!-- Calculator container -->
+    <div class="container calc p-4 border rounded shadow bg-white">
+        <!-- Screen to display the current number or result -->
+        <div class="screen bg-light border rounded mb-3 p-3 text-right" id="screen">0</div>
+
+        <!-- Buttons for the calculator -->
+        <div class="row buttons">
+            <!-- Row 1: Number buttons 7, 8, 9, and operator button for division -->
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('7')">7</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('8')">8</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('9')">9</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-warning btn-block" onclick="setOperator('/')">/</button>
+            </div>
+
+            <!-- Row 2: Number buttons 4, 5, 6, and operator button for multiplication -->
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('4')">4</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('5')">5</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('6')">6</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-warning btn-block" onclick="setOperator('*')">*</button>
+            </div>
+
+            <!-- Row 3: Number buttons 1, 2, 3, and operator button for subtraction -->
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('1')">1</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('2')">2</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('3')">3</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-warning btn-block" onclick="setOperator('-')">-</button>
+            </div>
+
+            <!-- Row 4: Number button 0, clear button, equals button, and operator button for addition -->
+            <div class="col-3 p-1">
+                <button class="btn btn-primary btn-block" onclick="appendNumber('0')">0</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-danger btn-block" onclick="clearScreen()">C</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-success btn-block" onclick="calculate()">=</button>
+            </div>
+            <div class="col-3 p-1">
+                <button class="btn btn-warning btn-block" onclick="setOperator('+')">+</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Calculator Assignment</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link to external JavaScript file for calculator logic -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
